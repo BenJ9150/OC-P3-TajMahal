@@ -24,7 +24,7 @@
 		42E9DCB12AF11138007CE7D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
-		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,13 +58,11 @@
 		42E9DCAC2AF11136007CE7D0 /* TajMahal */ = {
 			isa = PBXGroup;
 			children = (
-				42E9DCC02AF11662007CE7D0 /* Info.plist */,
+				43CB1DD62B3D806400D28C82 /* SupportingFiles */,
+				43CB1DD52B3D805B00D28C82 /* Model */,
+				43CB1DD72B3D806E00D28C82 /* ViewModel */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
-				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
-				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
-				428D2B502AFA851900BBA4F5 /* Model.swift */,
-				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
 			);
 			path = TajMahal;
 			sourceTree = "<group>";
@@ -84,6 +82,32 @@
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		43CB1DD52B3D805B00D28C82 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				428D2B502AFA851900BBA4F5 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		43CB1DD62B3D806400D28C82 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
+				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
+				42E9DCC02AF11662007CE7D0 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		43CB1DD72B3D806E00D28C82 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				428D2B522AFA882700BBA4F5 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
