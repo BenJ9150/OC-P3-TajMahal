@@ -12,17 +12,19 @@ struct WelcomeView: View {
     
     var body: some View {
         NavigationStack {
-            restaurantImageView
-            restaurantBannerView
-            restaurantInfoView
-            Spacer()
-            NavigationLink {
-                MenuView()
-            } label : {
-                showMenuBtnView
+            VStack {
+                restaurantImageView
+                restaurantBannerView
+                restaurantInfoView
+                Spacer()
+                NavigationLink {
+                    MenuView()
+                } label : {
+                    showMenuBtnView
+                }
             }
+            .padding(20)
         }
-        .padding(20)
     }
 }
 

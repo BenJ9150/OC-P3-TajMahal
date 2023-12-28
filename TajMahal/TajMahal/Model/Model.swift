@@ -15,11 +15,19 @@ enum SpiceLevel {
 }
 
 // Représente l'objet "plat", qui figure sur la carte du menu
-struct Dish {
+struct Dish: Identifiable {
+    let id = UUID()
     var name: String
     var description: String
     var allergens: String
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+}
+
+// Regroupe les plats en fonction du type (entrées / plats)
+struct Meal: Identifiable {
+    let id = UUID()
+    var mealType: String
+    var dishs: [Dish]
 }
