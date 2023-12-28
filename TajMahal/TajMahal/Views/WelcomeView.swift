@@ -13,7 +13,7 @@ struct WelcomeView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                restaurantImageView
+                BigImageView(imageName: "TajMahal")
                 restaurantBannerView
                 restaurantInfoView
                 Spacer()
@@ -28,18 +28,6 @@ struct WelcomeView: View {
     }
 }
 
-// MARK: Restaurant image
-
-extension WelcomeView {
-
-    // Image du restaurant
-    private var restaurantImageView: some View {
-        Image("TajMahal")
-            .resizable()
-            .scaledToFit()
-    }
-}
-
 // MARK: Restaurant banner
 
 extension WelcomeView {
@@ -47,21 +35,20 @@ extension WelcomeView {
     // Bannière du restaurant avec logo
     private var restaurantBannerView: some View {
         HStack {
-            VStack(alignment: .leading, content: {
+            VStack(alignment: .leading, spacing: 2) {
                 Text("Restaurant Indien")
                     .font(.jakarta_regular_12)
                     .foregroundStyle(Color("color_text"))
-                    .padding(.bottom, 2)
                 Text("Taj Mahal")
                     .font(.jakarta_bold_18)
                     .foregroundStyle(Color("color_title"))
-            })
+            }
             Spacer()
             Image("ic_logo_gray")
                 .frame(width: 40, height: 40)
         }
-        .padding(.top, 20)
-        .padding(.bottom, 20)
+        .padding(.top, 32)
+        .padding(.bottom, 32)
     }
 }
 
@@ -71,7 +58,7 @@ extension WelcomeView {
 
     // Informations sur le restaurant
     private var restaurantInfoView: some View {
-        VStack {
+        VStack(spacing: 14) {
             InfoRowView(icon: "ic_clock", primaryInfo: "Mardi", secondaryInfo: "11h30 - 14h30・18h30 - 22h00")
             InfoRowView(icon: "ic_service", primaryInfo: "Type de Service", secondaryInfo: "À emporter")
             InfoRowView(icon: "ic_localization", primaryInfo: "12  Avenue de la Brique - 75010 Paris")
@@ -97,7 +84,6 @@ extension WelcomeView {
                     .font(.jakarta_semibold_12)
                     .foregroundStyle(Color("color_text"))
             }
-            .padding(.bottom, 14)
         }
     }
 }
@@ -115,6 +101,7 @@ extension WelcomeView {
             .frame(height: 40)
             .background(Color("CustomRed"))
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            .padding(.top, 32)
     }
 }
 

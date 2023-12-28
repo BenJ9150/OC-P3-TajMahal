@@ -16,11 +16,11 @@ struct MenuView: View {
     var body: some View {
         List {
             ForEach(viewModel.meals) { meal in
-                Section(header: Text(meal.mealType)) {
+                Section(header: Text(meal.mealType).padding(.bottom, 12)) {
                     ForEach(meal.dishs) { dish in
                         ZStack(alignment: .leading) {
                             NavigationLink {
-                                DishDetailView()
+                                DishDetailView(dish: dish)
                             } label : {
                                 EmptyView()
                             }
@@ -32,7 +32,6 @@ struct MenuView: View {
                 .textCase(nil)
                 .font(.jakarta_bold_14)
                 .foregroundStyle(Color("color_text"))
-                .padding(.bottom, 12)
             }
         }
         .listRowSeparator(.hidden)
@@ -69,14 +68,13 @@ extension MenuView {
         let dish: Dish
 
         var body: some View {
-            HStack {
+            HStack(spacing: 25) {
                 Image(dish.imageName)
                     .resizable()
                     .scaledToFill()
                     .frame(width: 112, height: 86)
                     .clipShape(RoundedRectangle(cornerRadius: 10))
-                    .padding(.trailing, 25)
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     Text(dish.name)
                         .font(.jakarta_semibold_14)
                         .foregroundStyle(Color("color_text"))
@@ -91,9 +89,7 @@ extension MenuView {
                             .font(.jakarta_semibold_12)
                             .foregroundStyle(Color("color_text"))
                         Spacer()
-                        Image("ic_pepper_active")
-                        Image(dish.spiceLevel == .medium || dish.spiceLevel == .hot ? "ic_pepper_active" : "ic_pepper_inactive")
-                        Image(dish.spiceLevel == .hot ? "ic_pepper_active" : "ic_pepper_inactive")
+                        SpiceLevelView(spiceLevel: dish.spiceLevel)
                     }
                 }
             }

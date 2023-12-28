@@ -19,6 +19,7 @@
 		4359B7C82B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4359B7C52B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf */; };
 		4359B7CC2B3DA3D800753DA6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359B7CB2B3DA3D800753DA6 /* Extensions.swift */; };
 		43ADC4C52B3DC23C00DC1902 /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADC4C42B3DC23C00DC1902 /* DishDetailView.swift */; };
+		43ADC4C72B3DC88F00DC1902 /* ComponentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43ADC4C62B3DC88F00DC1902 /* ComponentsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		4359B7C52B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
 		4359B7CB2B3DA3D800753DA6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		43ADC4C42B3DC23C00DC1902 /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		43ADC4C62B3DC88F00DC1902 /* ComponentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		42E9DCBB2AF113D1007CE7D0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				43ADC4C62B3DC88F00DC1902 /* ComponentsView.swift */,
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
 				43ADC4C42B3DC23C00DC1902 /* DishDetailView.swift */,
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43ADC4C72B3DC88F00DC1902 /* ComponentsView.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				43ADC4C52B3DC23C00DC1902 /* DishDetailView.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
