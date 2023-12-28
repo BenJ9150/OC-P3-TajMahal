@@ -14,6 +14,10 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		4359B7C62B3D8B2100753DA6 /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4359B7C32B3D8B2100753DA6 /* PlusJakartaSans-Bold.ttf */; };
+		4359B7C72B3D8B2100753DA6 /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4359B7C42B3D8B2100753DA6 /* PlusJakartaSans-SemiBold.ttf */; };
+		4359B7C82B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4359B7C52B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf */; };
+		4359B7CA2B3D8B8700753DA6 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4359B7C92B3D8B8600753DA6 /* FontExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		4359B7C32B3D8B2100753DA6 /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		4359B7C42B3D8B2100753DA6 /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		4359B7C52B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		4359B7C92B3D8B8600753DA6 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +92,17 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		4359B7C22B3D8AED00753DA6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4359B7C32B3D8B2100753DA6 /* PlusJakartaSans-Bold.ttf */,
+				4359B7C52B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf */,
+				4359B7C42B3D8B2100753DA6 /* PlusJakartaSans-SemiBold.ttf */,
+				4359B7C92B3D8B8600753DA6 /* FontExtension.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		43CB1DD52B3D805B00D28C82 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +114,7 @@
 		43CB1DD62B3D806400D28C82 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				4359B7C22B3D8AED00753DA6 /* Fonts */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
@@ -168,8 +188,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4359B7C62B3D8B2100753DA6 /* PlusJakartaSans-Bold.ttf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
+				4359B7C82B3D8B2100753DA6 /* PlusJakartaSans-Regular.ttf in Resources */,
+				4359B7C72B3D8B2100753DA6 /* PlusJakartaSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4359B7CA2B3D8B8700753DA6 /* FontExtension.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
@@ -321,7 +345,7 @@
 				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TajMahal/Info.plist;
+				INFOPLIST_FILE = TajMahal/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -350,7 +374,7 @@
 				DEVELOPMENT_TEAM = 6FH7WNJPHQ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TajMahal/Info.plist;
+				INFOPLIST_FILE = TajMahal/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

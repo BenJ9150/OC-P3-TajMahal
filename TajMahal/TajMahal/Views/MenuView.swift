@@ -16,6 +16,7 @@ struct MenuView: View {
         List {
             // À completer
         }
+        .navigationTitle("Menu")
     }
 }
 
