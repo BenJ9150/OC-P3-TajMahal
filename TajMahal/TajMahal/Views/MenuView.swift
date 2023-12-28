@@ -85,7 +85,7 @@ extension MenuView {
                         .lineLimit(2)
                         .padding(.bottom, 12)
                     HStack {
-                        Text("5,50€")
+                        Text(priceToString(price: dish.price))
                             .font(.jakarta_semibold_12)
                             .foregroundStyle(Color("color_text"))
                         Spacer()
@@ -93,6 +93,11 @@ extension MenuView {
                     }
                 }
             }
+        }
+
+        // Formate le prix du plat
+        private func priceToString(price: Float) -> String {
+            return String(format: "%.2f€", price).replacingOccurrences(of: ".", with: ",")
         }
     }
 }

@@ -23,6 +23,7 @@ struct Dish: Identifiable {
     var ingredients: String
     var spiceLevel: SpiceLevel
     var imageName: String
+    var price: Float
 }
 
 // Regroupe les plats en fonction du type (entrées / plats)
