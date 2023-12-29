@@ -2,16 +2,7 @@
   "images" : [
     {
       "filename" : "7. indian-food-rogan-josh-curry-sauce-pork-rogan-jo-2021-08-28-14-46-30-utc.jpg",
-      "idiom" : "universal",
-      "scale" : "1x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "2x"
-    },
-    {
-      "idiom" : "universal",
-      "scale" : "3x"
+      "idiom" : "universal"
     }
   ],
   "info" : {

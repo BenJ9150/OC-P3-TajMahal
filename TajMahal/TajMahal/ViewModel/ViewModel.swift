@@ -25,6 +25,7 @@ struct ViewModel {
      Dish(name: "Rogan Josh", description: "Agneau mijoté dans une sauce épicée", allergens: "Ail, oignon", ingredients: "Agneau, oignons, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, huile, coriandre fraîche", spiceLevel: .hot, imageName: "Rogan Josh", price: 14.5)]
 
     // Dictionnaire pour regrouper les menus par section (entrées / plats)
+    // Utilisé pour créer la liste de menus avec les sections
     var meals : [Meal] {
         return [Meal(mealType: "Entrées", dishs: apetizerArray), Meal(mealType: "Plats Principaux", dishs: mainCourseArray)]
     }

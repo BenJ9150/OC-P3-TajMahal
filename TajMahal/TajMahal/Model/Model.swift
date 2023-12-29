@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 // Cette enumération répertorie 3 niveaux de piment
 enum SpiceLevel {
@@ -15,6 +16,7 @@ enum SpiceLevel {
 }
 
 // Représente l'objet "plat", qui figure sur la carte du menu
+// Rendu identifiable pour les vues dynamiques de la liste de menu
 struct Dish: Identifiable {
     let id = UUID()
     var name: String
@@ -27,6 +29,7 @@ struct Dish: Identifiable {
 }
 
 // Regroupe les plats en fonction du type (entrées / plats)
+// Rendu identifiable pour les vues dynamiques de la liste de menu
 struct Meal: Identifiable {
     let id = UUID()
     var mealType: String

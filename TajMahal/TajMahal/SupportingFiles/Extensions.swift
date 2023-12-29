@@ -10,11 +10,13 @@ import SwiftUI
 
 extension UINavigationController {
 
+    // permet de masquer le text "back" à côté du chevron "retour"
     open override func viewWillLayoutSubviews() {
         navigationBar.topItem?.backButtonDisplayMode = .minimal
     }
 }
 
+// Extension de Font pour récupérer facilement les fonts dans le code
 extension Font {
 
     // Regular

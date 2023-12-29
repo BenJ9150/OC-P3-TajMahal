@@ -15,8 +15,10 @@ struct MenuView: View {
     
     var body: some View {
         List {
+            // On affiche chaque section (entrées, plats)
             ForEach(viewModel.meals) { meal in
                 Section(header: Text(meal.mealType).padding(.bottom, 12)) {
+                    // On affiche chaque plat de la section
                     ForEach(meal.dishs) { dish in
                         ZStack(alignment: .leading) {
                             NavigationLink {
@@ -40,40 +42,30 @@ struct MenuView: View {
     }
 }
 
-// MARK: Section title
-
-extension MenuView {
-
-    // Titre de la liste
-    private struct SectionTileView: View {
-        let title: String
-
-        var body: some View {
-            Text(title)
-                .font(.jakarta_bold_14)
-                .foregroundStyle(Color("color_text"))
-                .frame(alignment: .leading)
-                .padding(.top, 24)
-                .padding(.bottom, 12)
-        }
-    }
-}
-
 // MARK: Menu row
 
 extension MenuView {
 
     // Modèle d'une ligne de la liste des plats
     private struct MenuRowView: View {
+        // le plat à afficher
         let dish: Dish
+        // l'image du plat
+        @State private var dishImage: UIImage?
 
         var body: some View {
             HStack(spacing: 25) {
-                Image(dish.imageName)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 112, height: 86)
-                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                if let uiImage = dishImage {
+                    Image(uiImage: uiImage)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 112, height: 86)
+                        .clipShape(RoundedRectangle(cornerRadius: 10))
+                } else {
+                    // Image non chargée, on affiche une progress view
+                    ProgressView()
+                        .frame(width: 112, height: 86)
+                }
                 VStack(alignment: .leading, spacing: 0) {
                     Text(dish.name)
                         .font(.jakarta_semibold_14)
@@ -93,6 +85,11 @@ extension MenuView {
                     }
                 }
             }
+            .task {
+                // Chargement de l'image en async
+                // Fait car les images sont très grosses !
+                dishImage = UIImage(named: dish.imageName)
+            }
         }
 
         // Formate le prix du plat
@@ -107,3 +104,4 @@ extension MenuView {
 #Preview {
     MenuView()
 }
+
