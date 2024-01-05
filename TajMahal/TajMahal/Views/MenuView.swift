@@ -88,7 +88,9 @@ extension MenuView {
             .task {
                 // Chargement de l'image en async
                 // Fait car les images sont très grosses !
-                dishImage = UIImage(named: dish.imageName)
+                Task.detached(priority: .background) {
+                    dishImage = UIImage(named: dish.imageName)
+                }
             }
         }
 
