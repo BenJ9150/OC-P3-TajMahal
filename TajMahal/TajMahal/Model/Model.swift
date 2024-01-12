@@ -19,19 +19,19 @@ enum SpiceLevel {
 // Rendu identifiable pour les vues dynamiques de la liste de menu
 struct Dish: Identifiable {
     let id = UUID()
-    var name: String
-    var description: String
-    var allergens: String
-    var ingredients: String
-    var spiceLevel: SpiceLevel
-    var imageName: String
-    var price: Float
+    let name: String
+    let description: String
+    let allergens: String
+    let ingredients: String
+    let spiceLevel: SpiceLevel
+    let imageName: String
+    let price: Float
 }
 
 // Regroupe les plats en fonction du type (entrées / plats)
 // Rendu identifiable pour les vues dynamiques de la liste de menu
 struct Meal: Identifiable {
     let id = UUID()
-    var mealType: String
-    var dishs: [Dish]
+    let mealType: String
+    let dishs: [Dish]
 }
