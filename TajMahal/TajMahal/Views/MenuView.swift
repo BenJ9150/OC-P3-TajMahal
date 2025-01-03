@@ -85,18 +85,26 @@ extension MenuView {
                     }
                 }
             }
-            .task {
-                // Chargement de l'image en async
-                // Fait car les images sont très grosses !
-                Task.detached(priority: .background) {
-                    dishImage = UIImage(named: dish.imageName)
-                }
+            .onAppear {
+                loadImage()
             }
         }
 
         // Formate le prix du plat
         private func priceToString(price: Float) -> String {
             return String(format: "%.2f€", price).replacingOccurrences(of: ".", with: ",")
+        }
+
+        // charge l'image
+        private func loadImage() {
+            // Les images étant lourdes, on les charge en background
+            // pour ne pas figer l'écran lors de l'ouverture
+            Task(priority: .background) {
+                let image = UIImage(named: dish.imageName)
+                DispatchQueue.main.async {
+                    self.dishImage = image
+                }
+            }
         }
     }
 }
