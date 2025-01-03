@@ -1,4 +1,4 @@
-# Complétez une interface dynamique en SwiftUI
+# OpenClassrooms : Développez votre première application iOS
 
 Ce projet fait partie du parcours "Développeur d'application iOS" d'OpenClassrooms (projet 3).
 
@@ -10,15 +10,15 @@ Pour concevoir les vues, des maquettes étaient mises à disposition via l'appli
 <table style="border: none">
   <tr>
     <td align="center">
-      <img src="TajMahal/TajMahal/Screenshots/1_WelcomeView.png" alt="Welcome View" width="300"><br>
+      <img src="TajMahal/TajMahal/Screenshots/1_WelcomeView.png" alt="Welcome View" width="200"><br>
       Welcome View
     </td>
     <td align="center">
-      <img src="TajMahal/TajMahal/Screenshots/2_MenuView.png" alt="Menu View" width="300"><br>
+      <img src="TajMahal/TajMahal/Screenshots/2_MenuView.png" alt="Menu View" width="200"><br>
       Menu View
     </td>
     <td align="center">
-      <img src="TajMahal/TajMahal/Screenshots/3_DetailsView.png" alt="Details View" width="300"><br>
+      <img src="TajMahal/TajMahal/Screenshots/3_DetailsView.png" alt="Details View" width="200"><br>
       Details View
     </td>
   </tr>
