@@ -1,4 +1,4 @@
-# Complétez une interface dynamique en SwiftUI
+# OpenClassrooms : Développez votre première application iOS
 
 Ce projet fait partie du parcours "Développeur d'application iOS" d'OpenClassrooms (projet 3).
 
