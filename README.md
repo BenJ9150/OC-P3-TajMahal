@@ -5,3 +5,7 @@ Ce dépôt git contient le projet Taj Mahal commencé par Priyanka dans le cadre
 Faites un fork pour pouvoir le compléter.
 
 Happy learning !
+
+# Capture d'écran de l'application
+
+![Home View](TajMahal/Screenshots/1_WelcomeView.png?raw=true "Home View")
